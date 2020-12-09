@@ -1,0 +1,38 @@
+t01
+_______________________________
+COLUMNS:
+('last_name', 'first_name', 'Articles', 'Papers', 'Books')
+DATA:
+('Osborne', 'F.J.F.', 0, 1, 0)
+
+t02
+_______________________________
+COLUMNS:
+('last_name', 'first_name', 'keywords', 'supp_keys')
+DATA:
+('Osborne', 'F.J.F.', 1, 10)
+
+
+
+t03
+_______________________________
+COLUMNS:
+('k_desc', 'supp_keys')
+DATA:
+('Arms Control and Non-Proliferation Studies', 25)
+
+
+t04
+_______________________________
+COLUMNS:
+('k_desc', 'member_count')
+DATA:
+('Arms Control and Non-Proliferation Studies', 33)
+
+t05
+_______________________________
+
+COLUMNS:
+('k_desc', 'sk_desc', 'member_count')
+DATA:
+('Geographic Focus', 'Arctic', 6)

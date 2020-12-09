@@ -1,0 +1,46 @@
+t01
+___________
+COLUMNS:
+('keyword_id', 'k_desc')
+DATA:
+(7, 'Arms Control and Non-Proliferation Studies')
+
+
+t02
+___________
+COLUMNS:
+('pub_id', 'member_id', 'pub_type_id', 'p_title', 'authors', 'journal', 'volume', 'conference', 'publisher', 'date')
+DATA:
+(10, 1, 'p', 'Outer Space and Multilateral Security: Current Trends & Possibilities', 'Osborne, F.J.F.', None, None, None, None, 'March, 1998')
+
+
+t03
+___________
+COLUMNS:
+('keyword_id', 'member_id', 'last_name', 'first_name', 'title', 'institution', 'address', 'telephone', 'fax', 'email', 'k_desc')
+DATA:
+(7, 1, 'Osborne', 'F.J.F.', 'Dr. ', 'F.J.F. Osborne and Associates', '207 Stonehenge Drive\nBeaconsfield, QC  H9W 3X8', '(514) 695-3427', 'On request (514) 695-3427', None, 'Arms Control and Non-Proliferation Studies')
+
+t04
+___________
+COLUMNS:
+('keyword_id', 'k_desc', 'supp_key_id', 'sk_desc')
+DATA:
+(7, 'Arms Control and Non-Proliferation Studies', 9, 'Confidence Building Measures')
+(7, 'Arms Control and Non-Proliferation Studies', 10, 'Export Controls, Supplier Groups, etc.')
+(7, 'Arms Control and Non-Proliferation Studies', 23, 'Measures Addressing Export Controls')
+(7, 'Arms Control and Non-Proliferation Studies', 11, 'Peacekeeping and Conflict Management')
+(13, 'Civil-Military Relations', 47, 'Civilian Contracting of Military Functions')
+(13, 'Civil-Military Relations', 45, 'Conditions of Military Service (e.g. Women, Minorities, Rights)')
+(13, 'Civil-Military Relations', 42, 'Constitutional Basis of Defence')
+(13, 'Civil-Military Relations', 46, 'Defence Industrial Conversion and Diversification')
+(13, 'Civil-Military Relations', 43, 'Reserve Forces and Conscription')
+(11, 'Defence Management and Policy', 52, 'Finance and Economics of Defence')
+(12, 'Military History', 175, 'Campaign Planning and Conduct')
+(12, 'Military History', 155, 'Protracted Conflicts')
+(12, 'Military History', 72, 'Second World War')
+(33, 'Military Law', 187, 'Law of Armed Conflict')
+(35, 'Procurement', 192, 'Contracts')
+(8, 'Strategic Studies', 103, 'Arms Control and Disarmament')
+(8, 'Strategic Studies', 105, 'Confidence Building Measures')
+(9, 'Terrorism', 147, 'Democratization, Economic Development, Civil Society')

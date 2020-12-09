@@ -1,0 +1,166 @@
+t01
+_______________________________
+Table name not provided:
+COLUMNS:
+('TABLE_NAME', 'TABLE_TYPE', 'TABLE_ROWS', 'TABLE_COMMENT')
+DATA:
+('keyword', 'BASE TABLE', 19, 'Contains broad categories of security expertise.')
+('member', 'BASE TABLE', 82, 'Contains information on Members of the CRIS directory.')
+('member_keyword', 'BASE TABLE', 307, 'Joins Keyword to Member through a lookup table.')
+('member_supp_key', 'BASE TABLE', 1296, 'Joins Member to Supp_Key through a lookup table.')
+('pub', 'BASE TABLE', 229, 'Contains representative Publications of Members.')
+('pub_type', 'BASE TABLE', 3, 'Primary key identifier for Type.')
+('supp_key', 'BASE TABLE', 160, 'Supplementary Keywords representing narrow areas of a Member')
+('v_keyword_supp_key', 'VIEW', None, 'VIEW')
+('v_member_keyword', 'VIEW', None, 'VIEW')
+('v_member_supp_key', 'VIEW', None, 'VIEW')
+
+
+Table name provided
+COLUMNS:
+('TABLE_NAME', 'TABLE_TYPE', 'TABLE_ROWS', 'TABLE_COMMENT')
+DATA:
+('keyword', 'BASE TABLE', 19, 'Contains broad categories of security expertise.')
+
+
+
+t02
+_______________________________
+Table name not provided:
+COLUMNS:
+('TABLE_NAME', 'COLUMN_NAME', 'IS_NULLABLE', 'DATA_TYPE')
+DATA:
+('keyword', 'k_desc', 'NO', b'varchar')
+('keyword', 'keyword_id', 'NO', b'tinyint')
+('member', 'address', 'YES', b'longtext')
+('member', 'email', 'YES', b'varchar')
+('member', 'fax', 'YES', b'varchar')
+('member', 'first_name', 'YES', b'varchar')
+('member', 'institution', 'YES', b'longtext')
+('member', 'last_name', 'NO', b'varchar')
+('member', 'member_id', 'NO', b'smallint')
+('member', 'telephone', 'YES', b'varchar')
+('member', 'title', 'YES', b'varchar')
+('member_keyword', 'keyword_id', 'NO', b'tinyint')
+('member_keyword', 'member_id', 'NO', b'smallint')
+('member_supp_key', 'member_id', 'NO', b'smallint')
+('member_supp_key', 'supp_key_id', 'NO', b'smallint')
+('pub', 'authors', 'YES', b'longtext')
+('pub', 'conference', 'YES', b'longtext')
+('pub', 'date', 'YES', b'longtext')
+('pub', 'journal', 'YES', b'longtext')
+('pub', 'member_id', 'NO', b'smallint')
+('pub', 'p_title', 'NO', b'longtext')
+('pub', 'pub_id', 'NO', b'smallint')
+('pub', 'pub_type_id', 'NO', b'char')
+('pub', 'publisher', 'YES', b'longtext')
+('pub', 'volume', 'YES', b'longtext')
+('pub_type', 'pt_desc', 'NO', b'varchar')
+('pub_type', 'pub_type_id', 'NO', b'char')
+('supp_key', 'keyword_id', 'NO', b'tinyint')
+('supp_key', 'sk_desc', 'NO', b'varchar')
+('supp_key', 'supp_key_id', 'NO', b'smallint')
+('v_keyword_supp_key', 'k_desc', 'NO', b'varchar')
+('v_keyword_supp_key', 'keyword_id', 'NO', b'tinyint')
+('v_keyword_supp_key', 'sk_desc', 'NO', b'varchar')
+('v_keyword_supp_key', 'supp_key_id', 'NO', b'smallint')
+('v_member_keyword', 'address', 'YES', b'longtext')
+('v_member_keyword', 'email', 'YES', b'varchar')
+('v_member_keyword', 'fax', 'YES', b'varchar')
+('v_member_keyword', 'first_name', 'YES', b'varchar')
+('v_member_keyword', 'institution', 'YES', b'longtext')
+('v_member_keyword', 'k_desc', 'NO', b'varchar')
+('v_member_keyword', 'keyword_id', 'NO', b'tinyint')
+('v_member_keyword', 'last_name', 'NO', b'varchar')
+('v_member_keyword', 'member_id', 'NO', b'smallint')
+('v_member_keyword', 'telephone', 'YES', b'varchar')
+('v_member_keyword', 'title', 'YES', b'varchar')
+('v_member_supp_key', 'address', 'YES', b'longtext')
+('v_member_supp_key', 'email', 'YES', b'varchar')
+('v_member_supp_key', 'fax', 'YES', b'varchar')
+('v_member_supp_key', 'first_name', 'YES', b'varchar')
+('v_member_supp_key', 'institution', 'YES', b'longtext')
+('v_member_supp_key', 'k_desc', 'NO', b'varchar')
+('v_member_supp_key', 'keyword_id', 'NO', b'tinyint')
+('v_member_supp_key', 'last_name', 'NO', b'varchar')
+('v_member_supp_key', 'member_id', 'NO', b'smallint')
+('v_member_supp_key', 'sk_desc', 'NO', b'varchar')
+('v_member_supp_key', 'supp_key_id', 'NO', b'smallint')
+('v_member_supp_key', 'telephone', 'YES', b'varchar')
+('v_member_supp_key', 'title', 'YES', b'varchar')
+
+
+Table name provided:
+COLUMNS:
+('TABLE_NAME', 'COLUMN_NAME', 'IS_NULLABLE', 'DATA_TYPE')
+DATA:
+('pub', 'authors', 'YES', b'longtext')
+('pub', 'conference', 'YES', b'longtext')
+('pub', 'date', 'YES', b'longtext')
+('pub', 'journal', 'YES', b'longtext')
+('pub', 'member_id', 'NO', b'smallint')
+('pub', 'p_title', 'NO', b'longtext')
+('pub', 'pub_id', 'NO', b'smallint')
+('pub', 'pub_type_id', 'NO', b'char')
+('pub', 'publisher', 'YES', b'longtext')
+('pub', 'volume', 'YES', b'longtext')
+
+
+
+
+
+t03
+_______________________________
+Constraint type not provided:
+COLUMNS:
+('CONSTRAINT_NAME', 'TABLE_NAME', 'CONSTRAINT_TYPE')
+DATA:
+('FK_mk_keyword', 'member_keyword', 'FOREIGN KEY')
+('FK_mk_member', 'member_keyword', 'FOREIGN KEY')
+('FK_msk_member', 'member_supp_key', 'FOREIGN KEY')
+('FK_msk_supp_key', 'member_supp_key', 'FOREIGN KEY')
+('FK_pub_member', 'pub', 'FOREIGN KEY')
+('FK_pub_type', 'pub', 'FOREIGN KEY')
+('FK_supp_key_keyword', 'supp_key', 'FOREIGN KEY')
+('IN_k_desc', 'keyword', 'UNIQUE')
+('IN_pt_desc', 'pub_type', 'UNIQUE')
+('IN_sk_desc', 'supp_key', 'UNIQUE')
+('PRIMARY', 'keyword', 'PRIMARY KEY')
+('PRIMARY', 'member', 'PRIMARY KEY')
+('PRIMARY', 'member_keyword', 'PRIMARY KEY')
+('PRIMARY', 'member_supp_key', 'PRIMARY KEY')
+('PRIMARY', 'pub', 'PRIMARY KEY')
+('PRIMARY', 'pub_type', 'PRIMARY KEY')
+('PRIMARY', 'supp_key', 'PRIMARY KEY')
+
+
+Constraint type provided:
+COLUMNS:
+('CONSTRAINT_NAME', 'TABLE_NAME', 'CONSTRAINT_TYPE')
+DATA:
+('FK_mk_keyword', 'member_keyword', 'FOREIGN KEY')
+('FK_mk_member', 'member_keyword', 'FOREIGN KEY')
+('FK_msk_member', 'member_supp_key', 'FOREIGN KEY')
+('FK_msk_supp_key', 'member_supp_key', 'FOREIGN KEY')
+('FK_pub_member', 'pub', 'FOREIGN KEY')
+('FK_pub_type', 'pub', 'FOREIGN KEY')
+('FK_supp_key_keyword', 'supp_key', 'FOREIGN KEY')
+
+
+
+t04
+_______________________________
+table name and ref table name provided:
+COLUMNS:
+('CONSTRAINT_NAME', 'UPDATE_RULE', 'DELETE_RULE', 'TABLE_NAME', 'REFERENCED_TABLE_NAME')
+DATA:
+('FK_pub_type', 'NO ACTION', 'NO ACTION', 'pub', 'pub_type')
+
+t05
+_______________________________
+
+table name and ref table name provided:
+COLUMNS:
+('CONSTRAINT_NAME', 'TABLE_NAME', 'COLUMN_NAME', 'REFERENCED_TABLE_NAME', 'REFERENCED_COLUMN_NAME')
+DATA:
+('FK_pub_member', 'pub', 'member_id', 'member', 'member_id')
